@@ -12,4 +12,4 @@ It is login Page UI - contains login options
 ---
 
 * Note: The Project is live, click down to view!<br><br>
-![https://img.shields.io/badge/open%20now-Project%20Live%20Link-brightgreen](https://akhilmaithani.github.io/Login-Page-UI/)
+<a href="https://akhilmaithani.github.io/Login-Page-UI/" target="_blank"><img src="https://img.shields.io/badge/open%20now-Project%20Live%20Link-brightgreen" alt="live-link-image"></a>
