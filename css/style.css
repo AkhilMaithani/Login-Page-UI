@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --font: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(50deg, rgb(21, 28, 67) 50%, rgb(217, 97, 108));
+  font-family: var(--font);
+}
+#loginPage {
+  width: 100%;
+  min-height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login-box {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(5px);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 30px 0px black;
+}
+#login-box-inner {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+#login-heading {
+  width: 100%;
+  height: 15%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 10px black;
+}
+#login-form {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: 100%;
+}
+form * {
+  border: none;
+  outline: none;
+}
+label,
+input[type="text"],
+input[type="password"] {
+  display: block;
+}
+label {
+  padding: 0.5rem 0rem;
+  color: white;
+  font-family: var(--font);
+  text-shadow: 0px 0px 2px black;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="password"] {
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+label[for="password"] {
+  margin-top: 1rem;
+}
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+::placeholder {
+  color: #e5e5e5;
+}
+input {
+  color: white;
+  box-shadow: 0px 0px 5px 0px black;
+}
+input[value="Log In"] {
+  color: black;
+  background-color: white;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+input[value="Google"] {
+  background-color: red;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+input[value="Facebook"] {
+  background-color: blue;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+div.visible {
+  width: 100%;
+  position: relative;
+}
+button {
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  padding: 0.2rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  color: white;
+}
+@media screen and (max-width: 299px) and (min-width: 0px) {
+  #login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login-box {
+    width: 90% !important;
+  }
+  #login-heading,
+  label,
+  ::placeholder,
+  input {
+    font-size: 0.8rem !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 575px) and (min-width: 300px) {
+  #login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login-box {
+    width: 80% !important;
+  }
+  #login-heading {
+    font-size: 1rem !important;
+  }
+  label,
+  ::placeholder,
+  input {
+    font-size: 0.8rem !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  #login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login-box {
+    width: 70% !important;
+  }
+  #login-heading {
+    font-size: 1.1rem !important;
+  }
+  label,
+  ::placeholder,
+  input {
+    font-size: 0.9rem !important;
+  }
+  .container {
+    width: 88% !important;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  #login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login-box {
+    width: 60% !important;
+  }
+  #login-heading {
+    font-size: 1.3rem !important;
+  }
+  label,
+  ::placeholder,
+  input {
+    font-size: 1rem !important;
+  }
+  .container {
+    width: 85% !important;
+  }
+}
+@media screen and (max-width: 1399px) and (min-width: 1200px) {
+  #login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login-box {
+    width: 50% !important;
+  }
+  #login-heading {
+    font-size: 1.4rem !important;
+  }
+  label,
+  ::placeholder,
+  input {
+    font-size: 1.1rem !important;
+  }
+  .container {
+    width: 85% !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login-box {
+    width: 50% !important;
+  }
+  #login-heading {
+    font-size: 1.5rem !important;
+  }
+  label,
+  ::placeholder,
+  input {
+    font-size: 1.2rem !important;
+  }
+  .container {
+    width: 80% !important;
+  }
+}
